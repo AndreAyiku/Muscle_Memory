@@ -76,8 +76,8 @@ Muscle Memory is a comprehensive web application that connects fitness enthusias
 
 ```bash
 git clone https://github.com/AndreAyiku/muscle-memory.git
-
-CREATE DATABASE muscle_memory;
+```
+2. CREATE DATABASE muscle_memory;
 
 mysql -u your_username -p muscle_memory < database/schema.sql
 
@@ -98,14 +98,14 @@ $database = 'muscle_memory';
 
 
 
-Database Structure
+3. Database Structure
 MM_Users - User management
 MM_Trainers - Trainer profiles
 MM_Nutritionist - Nutritionist profiles
 MM_ClientConnections - Professional-client relationships
 MM_Workouts - Workout plans
 MM_Messages - Chat system
-Security Features
+## Security Features
 Password hashing
 Session management
 SQL injection prevention
@@ -113,28 +113,31 @@ XSS protection
 CSRF protection
 Input validation
 Prepared statements
-User Roles
-Regular User
+## User Roles
+# Regular User
 Browse professionals
 Request connections
 View workout plans
 Chat with connected professionals
 Track progress
-Trainer
+# Trainer
 Create/manage profile
 Accept/reject clients
 Create workout plans
 Chat with clients
 Track client progress
-Nutritionist
+# Nutritionist
 Create/manage profile
 Accept/reject clients
 Provide consultations
 Chat with clients
 Monitor client progress
-Admin
+# Admin
 Manage all users
 Monitor platform activity
 View statistics
 Moderate content
 System maintenance
+
+## Applciation Structure
+
