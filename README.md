@@ -73,5 +73,68 @@ Muscle Memory is a comprehensive web application that connects fitness enthusias
 
 ### Setup Instructions
 1. Clone the repository:
+
 ```bash
-git clone https://github.com/yourusername/muscle-memory.git
+git clone https://github.com/AndreAyiku/muscle-memory.git
+
+CREATE DATABASE muscle_memory;
+
+mysql -u your_username -p muscle_memory < database/schema.sql
+
+<?php
+$host = 'your_host';
+$username = 'your_username';
+$password = 'your_password';
+$database = 'muscle_memory';
+
+<VirtualHost *:80>
+    DocumentRoot "/path/to/muscle-memory"
+    ServerName muscle-memory.local
+    <Directory "/path/to/muscle-memory">
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+
+
+Database Structure
+MM_Users - User management
+MM_Trainers - Trainer profiles
+MM_Nutritionist - Nutritionist profiles
+MM_ClientConnections - Professional-client relationships
+MM_Workouts - Workout plans
+MM_Messages - Chat system
+Security Features
+Password hashing
+Session management
+SQL injection prevention
+XSS protection
+CSRF protection
+Input validation
+Prepared statements
+User Roles
+Regular User
+Browse professionals
+Request connections
+View workout plans
+Chat with connected professionals
+Track progress
+Trainer
+Create/manage profile
+Accept/reject clients
+Create workout plans
+Chat with clients
+Track client progress
+Nutritionist
+Create/manage profile
+Accept/reject clients
+Provide consultations
+Chat with clients
+Monitor client progress
+Admin
+Manage all users
+Monitor platform activity
+View statistics
+Moderate content
+System maintenance
